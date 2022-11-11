@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana POPUP</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="wrap">
+
+        <div class="wrap__card"
+            data-titulo="Proyecto 1"
+            data-descripcion=
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut beatae eligendi et saepe quidem iure earum reiciendis quam, quis aliquid?"
+            data-image_src="./image/image1.jpg"
+        >
+            <h3 class="wrap__h3">Proyecto 1</h3>
+            <p class="wrap__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, veniam?</p>
+        </div>
+
+        <div class="wrap__card"
+            data-titulo="Proyecto 2"
+            data-descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut beatae eligendi et saepe quidem iure earum reiciendis quam, quis aliquid?"
+            data-image_src="./image/image2.jpg"
+        >
+            <h3 class="wrap__h3">Proyecto 2</h3>
+            <p class="wrap__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, eius.</p>
+        </div>
+
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup__pop" id="pop">
+            <div class="popup__btn" id="btn_close"><span>&times;</span></div>
+            <h3 class="popup__h3" id="titulo"></h3>
+            <div class="popup__div-img">
+                <img src="" id="popup_img" class="popup__img" alt="image-project">
+            </div>
+            <p class="popup__p" id="descripcion"></p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

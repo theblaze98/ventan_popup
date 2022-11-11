@@ -1,0 +1,93 @@
+@use 'reset';
+
+// Wrap
+
+.wrap {
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	&__card {
+		width: calc(50% - 20px);
+		margin: 10px;
+		padding: 20px;
+		border-radius: 10px;
+		border: 1px solid #006eff;
+		box-shadow: 0 0 4px 2px #3b3b3b;
+		cursor: pointer;
+		transition: all ease 0.3s;
+		&:hover {
+			box-shadow: 0 0 6px 4px #3b3b3b;
+		}
+	}
+	&__h3 {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	&__p {
+		font-size: 14px;
+		line-height: 2em;
+	}
+}
+
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	margin: auto;
+	display: flex;
+	left: -120%;
+	top: -120%;
+	opacity: 0;
+	transition: all ease 1s;
+	align-items: center;
+	justify-content: center;
+	&__pop {
+		display: flex;
+		position: relative;
+		width: 80%;
+		height: 80%;
+		background: var(--bg-principal);
+		border-radius: 15px;
+		box-shadow: 0 0 4px 2px #3b3b3b;
+		padding: 20px;
+		flex-wrap: wrap;
+		gap: 20px;
+		align-items: center;
+	}
+	&__div-img {
+		flex-basis: 40%;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	&__h3 {
+		font-size: 26px;
+		font-weight: 500;
+		flex-basis: 100%;
+		text-align: center;
+	}
+	&__p {
+		font-size: 14px;
+		line-height: 2em;
+		flex-basis: 50%;
+		text-align: center;
+	}
+	&__btn {
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		span {
+			font-size: 24px;
+		}
+	}
+}
+
+.popup--visible {
+	opacity: 1;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
